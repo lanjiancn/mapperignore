@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoogurt.taxi.dal.mapper.FinanceDepositRecordMapper">
+  <resultMap id="BaseResultMap" type="com.yoogurt.taxi.dal.beans.FinanceDepositRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="from_deposit" jdbcType="DECIMAL" property="fromDeposit" />
+    <result column="to_deposit" jdbcType="DECIMAL" property="toDeposit" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="is_deleted" jdbcType="BIGINT" property="isDeleted" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="gmt_modify" jdbcType="TIMESTAMP" property="gmtModify" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+  </resultMap>
+</mapper>
